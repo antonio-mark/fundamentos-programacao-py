@@ -1,2 +1,4 @@
 # fundamentos-programacao-py
-Unisinos
+  - Unisinos 
+  - Fundamentos de Programação
+  - Python

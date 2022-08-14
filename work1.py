@@ -61,6 +61,8 @@ valor = float(input('Informe um valor : '))
 
 print("{} ${:.2f}".format(simbolo, valor))
 
-# print(simbolo + " $" + format(valor, '.2f'))
+print(f"{simbolo} ${valor:.2f}")
 
-# print(f'{simbolo} ${format(valor, ".2f")}')
+print(simbolo + " $" + format(valor, '.2f'))
+
+print(f'{simbolo} ${format(valor, ".2f")}')

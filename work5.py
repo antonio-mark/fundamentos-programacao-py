@@ -133,6 +133,88 @@ print(main())
 # no menu) e o número de horas trabalhadas no mês (opção 2 no menu). Calcule e 
 # mostre o detalhamento do seu contracheque no referido mês, conforme o seguinte 
 # menu:
-# •Salário bruto (opção 3);•Quanto pagou ao INSS (opção 4) (11%);•Quanto pagou ao sindicato (opção 5) (2%);•O salário líquido (opção 6);•Sair (opção 7);
+# •Salário bruto (opção 3);•Quanto pagou ao INSS (opção 4) (11%);•Quanto pagou ao sindicato 
+# (opção 5) (2%);•O salário líquido (opção 6);•Sair (opção 7);
 # •Caso não tenha sido informado o valor recebido por hora ou a quantidade de horas 
 # trabalhadas, deve gerar uma mensagem avisando que não há dados suficientes;
+
+import os
+
+sem_dados = "Não há dados suficientes"
+escolha = '-1'
+ganhos = 0
+horas = 0
+
+def menu():
+  os.system('cls' if os.name == 'nt' else 'clear')
+  print('1 - Beneficio por hora')
+  print('2 - Numero de horas trabalhadas')
+  print('3 - Salário bruto')
+  print('4 - Quanto pagou ao INSS')
+  print('5 - Quanto pagou ao sindicato')
+  print('6 - Salário líquido')
+  print('7 - Sair\n')
+  item = input('Escolha uma opção: ')
+  return item
+
+def opcao_1():
+    return float(input('Informe a quantidade de ganhos por hora: '))
+
+def opcao_2():
+    return int(input('Informe a quantidade de horas trabalhadas: '))
+
+def opcao_3():
+    if ganhos != 0 and horas != 0:
+        return ganhos * horas * 30
+    else:
+        return sem_dados
+
+def opcao_4():
+    if ganhos != 0 and horas != 0:
+        return ganhos * horas * 30 * 0.11
+    else:
+        return sem_dados
+
+def opcao_5():
+    if ganhos != 0 and horas != 0:
+        return ganhos * horas * 30 * 0.02
+    else:
+        return sem_dados
+
+def opcao_6():
+    if ganhos != 0 and horas != 0:
+        return ganhos * horas * 30 - ganhos * horas * 30 * 0.13
+    else:
+        return sem_dados
+
+while(escolha != '7'):
+  escolha = menu()
+  
+  if escolha == '1':
+    ganhos = opcao_1()
+  
+  elif escolha == '2':
+    horas = opcao_2()
+  
+  elif escolha == '3':
+    resultado = opcao_3()
+    print(resultado)
+  
+  elif escolha == '4':
+    resultado = opcao_4()
+    print(resultado)
+  
+  elif escolha == '5':
+    resultado = opcao_5()
+    print(resultado)
+  
+  elif escolha == '6':
+    resultado = opcao_6()
+    print(resultado)
+  
+  elif escolha == '7':
+    print('\nSaindo...\n')
+  
+  else:
+    print('\nOpção desconhecida!\n')
+  input('Pressione ENTER para continuar')

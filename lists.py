@@ -111,22 +111,37 @@
 # posição(ões) em que foi(foram) encontrado(s). Se não encontrar, imprima o número
 # lido e a mensagem "NÃO ENCONTRADO";
 
-lista = []
-while len(lista) < 10:
-    lista.append(float(input('digite um numero: ')))
+# lista = []
+# while len(lista) < 10:
+#     lista.append(float(input('digite um numero: ')))
 
-numero = float(input('digite um valor da lista: '))
-if numero not in lista:
-    print ('NÃO ENCONTRADO')
-else:
-    for i in range(len(lista)):
-        if(numero == lista[i]):
-            print(i, lista[i]) 
+# numero = float(input('digite um valor da lista: '))
+# if numero not in lista:
+#     print ('NÃO ENCONTRADO')
+# else:
+#     for i in range(len(lista)):
+#         if(numero == lista[i]):
+#             print(i, lista[i]) 
 
 # 8. Crie um programa que solicita  ao usuário digitar 5 números fracionários e os
 # armazena em um vetor “A”. Depois, solicite mais 5 números e armazene em um
 # segundo  vetor “B”. Mostre na tela as operações matemáticas soma, subtração,
 # multiplicação e divisão, índice por índice dos vetores;
+
+# A = []
+# while len(A) < 5:
+#     A.append(float(input('digite um numero: ')))
+
+# B = []
+# while len(B) < 5:
+#     B.append(float(input('digite um numero: ')))
+
+# for a, b in zip(A, B):
+#     print("soma {}".format(a + b))
+#     print("subtracao {}".format(a - b) )
+#     print("multiplicacao {}".format(a * b))
+#     print("divisao {}".format(a / b))
+
 
 # 9. Desafio: Monte um programa onde o usuário entra com o valor das diversas notas
 # alcançadas por uma turma de alunos. O programa inicia perguntando o tamanho da
@@ -150,3 +165,38 @@ else:
 # 7.1 ~  8.0: *****
 # 8.1 ~  9.0: *
 # 9.1 ~ 10.0: **
+
+# tamanho = int(input("digite o tamanho da turma: "))
+# lista = []
+
+# while len(lista) < tamanho:
+#     lista.append(float(input('digite uma nota do aluno: ')))
+
+# nota_minima = min(lista)
+# nota_maxima = max(lista)
+# qtd_nota_minima = lista.count(nota_minima)
+# qtd_nota_maxima = lista.count(nota_maxima)
+# media = sum(lista) / len(lista)
+
+# notas_zero_tres = len(list(filter(lambda x: x > 0 and x <= 3, lista)))
+# notas_tres_quatro = len(list(filter(lambda x: x > 3 and x <= 4, lista)))
+# notas_quatro_cinco = len(list(filter(lambda x: x > 4 and x <= 5, lista)))
+# notas_cinco_seis = len(list(filter(lambda x: x > 5 and x <= 6, lista)))
+# notas_seis_sete = len(list(filter(lambda x: x > 6 and x <= 7, lista)))
+# notas_sete_oito = len(list(filter(lambda x: x > 7 and x <= 8, lista)))
+# notas_oito_nove = len(list(filter(lambda x: x > 8 and x <= 9, lista)))
+# notas_nove_dez = len(list(filter(lambda x: x > 9 and x <= 10, lista)))
+
+# print("Resultado da avaliação da turma:")
+# print("Menor nota: {} ({})".format(nota_minima, qtd_nota_minima)) 
+# print("Maior nota: {} ({})".format(nota_maxima, qtd_nota_maxima)) 
+# print("Média da turma: {}".format(media)) 
+# print("Histograma das notas:")
+# print(" 0.0 ~  3.0: {}".format("*" * notas_zero_tres))
+# print(" 3.1 ~  4.0: {}".format("*" * notas_tres_quatro))
+# print(" 4.1 ~  5.0: {}".format("*" * notas_quatro_cinco))
+# print(" 5.1 ~  6.0: {}".format("*" * notas_cinco_seis))
+# print(" 6.1 ~  7.0: {}".format("*" * notas_seis_sete))
+# print(" 7.1 ~  8.0: {}".format("*" * notas_sete_oito))
+# print(" 8.1 ~  9.0: {}".format("*" * notas_oito_nove))
+# print(" 9.1 ~ 10.0: {}".format("*" * notas_nove_dez))

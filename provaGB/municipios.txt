@@ -1,0 +1,15 @@
+Municipio	Populacao	PIB Milhoes R$
+Dois Irmaos	33547	2085.18
+Soledade	31067	979.02
+Sao Jeronimo	24569	593.97
+Rolante	21591	629.34
+Nova Petropolis	21717	813.50
+Ivoti	25068	1062.70
+Teutonia	34275	1496.81
+Guaiba	98331	6749.55
+Bom Principio	14446	679.19
+Flores da Cunha	31352	1672.85
+Lagoa Vermelha	27751	1160.66
+Montenegro	66157	3808.58
+Charqueadas	41705	1770.81
+Portao	38081	1259.12
